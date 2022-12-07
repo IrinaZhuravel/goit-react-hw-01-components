@@ -1,15 +1,21 @@
 import PropTypes from 'prop-types';
 import { ProfileWrp, Description, Avatar, Name, Tag, Location, Stats, Item, Label, Quantity} from './Profile.styled';
 
-export const  Profile = ({user: {username, tag, location, avatar, stats}}) => {
+export const  Profile = ({
+  name,
+  tag,
+  location,
+  avatar,
+  stats,
+}) => {
     return (
-        <ProfileWrp>
-  <Description key={username}>
+  <ProfileWrp>
+  <Description>
     <Avatar
       src={avatar}
       alt="User avatar"
     />
-    <Name>{username}</Name>
+    <Name>{name}</Name>
     <Tag>@{tag}</Tag>
     <Location>{location}</Location>
   </Description>
@@ -34,7 +40,7 @@ export const  Profile = ({user: {username, tag, location, avatar, stats}}) => {
 }
 
 Profile.propTypes = {
-  username: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,

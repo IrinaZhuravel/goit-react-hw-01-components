@@ -2,9 +2,6 @@ import styled from 'styled-components';
 
 export const ProfileWrp = styled.div`
     font-size: 16px;
-    background-color: rgba(161, 161, 161, 0.8);
-    border-radius: 5px;
-    border: 1px solid rgba(161, 161, 161, 0.8);
 `;
 
 export const Description = styled.div`
@@ -36,19 +33,19 @@ export const Location = styled.p`
 
 export const Stats = styled.ul`
     padding: 0;
-    list-style-type: none;
     display: flex;      
+    background-color: #f3f6f9;
+    border-radius: 5px;
 `;
 
 export const Item = styled.li`
         padding: 10px;
-      
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-      
+        width: 60px;
         border: 1px solid gray;
+
 `;
 
  export const Label = styled.span`
