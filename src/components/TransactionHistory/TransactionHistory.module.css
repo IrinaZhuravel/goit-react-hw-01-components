@@ -1,0 +1,45 @@
+.table {
+    border-radius: 5px;
+    margin: 0 auto 50px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 2px 2px #cccccc;
+};
+
+.title {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #00bcd5;
+}
+
+.title th {
+    padding: 10px;
+    width: 150px;
+}
+
+.title th:not(:last-child) {
+    border-right: 1px solid #ffffff;
+}
+
+.row td {
+    padding: 10px;
+    text-align: center;
+}
+
+.row td:not(:last-child){
+    border-right: 1px solid #cccccc;
+}
+
+.light {
+    background-color: #ffffff;
+}
+
+.dark {
+    background-color: #E4E4E4;
+}
+
+.row .col {
+    padding-left: 50px;
+    text-align: left;
+}
