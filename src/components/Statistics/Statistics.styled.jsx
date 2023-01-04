@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const Statistic = styled.section`
-    width: 340px;
+    width: 260px;
     margin: 0 auto 50px;
 `;
 
 export const Title = styled.h2`
   font-weight: 500;
+  font-size: 36px;
   margin: 0;
   padding: 35px 0 0;
   text-align: center;
